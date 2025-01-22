@@ -8,7 +8,10 @@ function App() {
   return (
     <div className='app'>
       <Header />
-      <button onClick={() => setShow((p) => !p)}>
+      <button
+        style={{ width: '100px', margin: '0 auto' }}
+        onClick={() => setShow((p) => !p)}
+      >
         {show ? 'hide content' : 'show content'}
       </button>
       {show && (
